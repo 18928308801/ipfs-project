@@ -1,6 +1,10 @@
 const https = require('https');
 
-https.get('https://gateway.ipfs.io/ipfs/QmaVX4eYCu3LfRTmvrmjMZfYMgJPG7D4xkonkaUdg7cFQw', (res) => {
+var params = 'QmaVX4eYCu3LfRTmvrmjMZfYMgJPG7D4xkonkaUdg7cFQw'
+
+var url = 'https://gateway.ipfs.io/ipfs/' + params
+
+https.get(url, (res) => {
 		console.log('statusCode:', res.statusCode);
 		console.log('headers:', res.headers);
 
