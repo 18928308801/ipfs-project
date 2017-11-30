@@ -3,7 +3,7 @@
 const series = require('async/series')
 const IPFS = require('ipfs')
 const fs = require('fs')
-var buffer = fs.readFileSync('./cat.jpg');
+var buffer = fs.readFileSync('./contract.png');
 
 const node = new IPFS()
 	let fileMultihash
@@ -16,7 +16,7 @@ series([
 		cb()
 		}),
 	(cb) => node.files.add({
-		path: './cat.jpg',
+		path: './contract.png',
 		content: Buffer.from(buffer)
 		}, (err, filesAdded) => {
 			if (err) { return cb(err) }

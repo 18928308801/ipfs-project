@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "ipfs": "^0.26.0",
+    "nodemailer-smtp-transport": "^2.7.4",
     "readable-stream": "^2.3.3"
   }
 }

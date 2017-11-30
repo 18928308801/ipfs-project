@@ -4,7 +4,7 @@ const series = require('async/series')
 const IPFS = require('ipfs')
 const fs = require('fs')
 
-var params = './cat.jpg'
+var params = './contract.png'
 
 var buffer = fs.readFileSync(params);
 
